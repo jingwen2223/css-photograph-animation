@@ -1,0 +1,322 @@
+.name{
+  text-align: center;
+}
+.container{
+  border: ridge 30px lightblue;
+  width: 700px;
+  height:500px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+
+}
+.backImg{
+  width: 100%;
+  height:100%;
+}
+.car{
+  width: 150px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  animation-name: slideCar;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay:2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slideCar {
+  from{transform:translateX(-700px);}
+    to{transform:translateX(-10px);}
+}
+.cloud1, .cloud2, .cloud3{
+    position:absolute;
+    animation-name: cloudsMove;
+    animation-iteration-count: infinite;
+}
+.cloud1{
+  width: 100px;
+  top:0px;
+  left:-100px;
+  animation-duration: 5s;
+}
+.cloud2{
+  width: 150px;
+  top:20px;
+  left:-200px;
+  animation-duration: 8s;
+
+}
+.cloud3{
+  width: 220px;
+  top:0px;
+  left:-150px;
+  animation-duration: 6s;
+
+}
+@keyframes cloudsMove {
+
+  0%{  transform: translateX(0px);opacity: 0.9;}
+  100%{transform: translateX(800px);opacity: 0.5;}
+
+}
+.sun{
+  position: absolute;
+  top:0px;
+  left:-10px;
+  width: 150px;
+  animation: rotationFlashing 30s forwards;
+
+}
+@keyframes rotationFlashing {
+  0%{transform: rotate(45deg); opacity: 0.9;}
+  25%{opacity: 0.5;}
+  50%{transform: rotate(-100deg);}
+  75%{opacity: 0.8;}
+  100%{transform: rotate(360deg);opacity: 0.3;left: 700px}
+
+}
+.zoomSun{
+  position: absolute;
+  width: 200px;
+  left:200px;
+  top: 200px;
+  animation: zoom 8s forwards;
+}
+@keyframes zoom {
+  0&{transform: scale(0.3);}
+  30%{transform: rotate(180deg);}
+  50%{transform: scale(2);}
+  85%{transform: rotate(-180deg);}
+  100%{transform: scale(240deg) scale(0);
+  }
+}
+.container2{
+
+  border: ridge 30px lightgray;
+  width: 700px;
+  height:500px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+overflow: hidden;
+  display: block;
+  box-shadow: 20px -20px 20px gray;
+
+}
+.firework{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation-name: picture;
+  animation-delay:  3s;
+  animation-duration: 0.5s;
+
+}
+.camera{
+  width: 25%;
+  height: 25%;
+  margin-top: 20%;
+  margin-left: 35%;
+  margin-right: 25%;
+  margin-bottom: 25%;
+  position: absolute;
+  animation-name: count;
+  animation-duration: 3s;
+
+}
+
+
+.fc1{
+  width: 10%;
+  height: 10%;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 60%;
+position: absolute;
+animation-duration: 10s;
+animation-delay: 2.5s;
+
+}
+.fc2{
+  width: 20%;
+  height: 20%;
+  margin-left:15%;
+  margin-right: 20%;
+  margin-top: 25%;
+  position: absolute;
+  animation-duration: 7s;
+  animation-delay: 2.5s;
+
+
+}
+.fc3{
+  width: 5%;
+  height: 20%;
+  margin-left:60%;
+  margin-right: 1%;
+  position: absolute;
+  animation-duration: 6s;
+  animation-delay: 2.5s;
+
+
+}
+.fc4{
+  width: 50%;
+  height: 50%;
+  margin-left:30%;
+  margin-right: 10%;
+  margin-top:  50%;
+
+  animation-duration: 4s;
+  animation-delay: 2.7s;
+  position: absolute;
+
+}
+.fc5{
+  width: 15%;
+  height: 15%;
+  margin-left:75%;
+  margin-right: 1%;
+  margin-top: 38%;
+
+  animation-duration: 5s;
+  animation-delay: 2.9s;
+  position: absolute;
+
+}
+.fc6{
+  width: 8%;
+  height: 8%;
+  margin-left:10%;
+  margin-right: 10%;
+  animation-duration: 10s;
+  animation-delay: 2.5s;
+  position: absolute;
+
+}
+.fc7{
+  margin-left:10%;
+  margin-right: 10%;
+  animation-duration: 6s;
+  animation-delay: 2.5s;
+  position:absolute;
+}
+.fc8{
+  margin-left:20%;
+  margin-right: 30%;
+  margin-top: 20%;
+    animation-duration: 5s;
+  animation-delay: 2.8s;
+  position: absolute;
+
+}
+.fc9{
+
+  margin-left:90%;
+  margin-right: 10%;
+    animation-duration: 7s;
+  animation-delay: 2.5s;
+  position: absolute;
+
+}
+.fc10{
+  margin-left:45%;
+  margin-right: 10%;
+  margin-top: 50%;
+  margin-bottom: 10%;
+  animation-duration: 9s;
+  animation-delay: 2.5s;
+  position: absolute;
+
+}
+.fc11{
+  margin-left:45%;
+  margin-right: 60%;
+position: absolute;
+animation-duration: 8s;
+animation-delay: 2.6s;
+position: absolute;
+
+}
+.fc12{
+  margin-left:30%;
+  margin-right: 40%;
+  animation-duration: 10s;
+  animation-delay: 2.9s;
+  position: absolute;
+
+}
+.fc7,.fc8,.fc9,.fc10,.fc11,.fc12{
+  width: 5%;
+  height: 5%;
+
+
+}
+
+.fc1,.fc2,.fc3,.fc4,.fc5,.fc6.fc7,.fc8,.fc9,.fc10,.fc11,.fc12{
+  animation-name: blink;
+
+}
+
+@keyframes picture {
+  0%{}
+  10%{}
+  20%{}
+  30%{filter: invert(100%);}
+}
+
+@keyframes blink {
+  0%{position: relative;}
+  10%{position: relative;}
+  20%{position: relative;}
+  30%{position: relative;}
+  40%{position: relative;}
+  53%{opacity: 0.1;}
+  56%{opacity: 0.5;}
+  60%{opacity: 0.1;}
+  63%{opacity: 0.9;}
+  65%{ opacity: 0.2;}
+  70%{opacity: 0.9;}
+  73%{opacity: 0.1;}
+  75%{opacity: 0.9;}
+  78%{opacity: 0.1;}
+  80%{opacity: 0.9;}
+  81%{opacity: 0.1;}
+  83%{opacity: 0.9;}
+  85%{ opacity: 0.1;}
+  86%{opacity: 0.9;}
+  87%{opacity: 0.1;}
+  88%{opacity: 0.9;}
+  89%{opacity: 0.3;}
+  89.5%{opacity: 0.9;}
+  90%{opacity: 0.2;}
+  91%{opacity: 0.9;}
+  92%{opacity: 0.1;}
+  93%{ opacity: 0.9;}
+  94%{opacity: 0.9;}
+  95%{opacity: 0.1;}
+  96%{opacity: 0.8;}
+  97%{opacity: 0.3;}
+  98%{opacity: 0.9;}
+  99%{opacity: 0.1;}
+  99.1%{opacity: 0.9;}
+  99.3%{ opacity: 0.1;}
+  99.5%{opacity: 0.8;}
+  99.6%{opacity: 0.1;}
+  99.7%{opacity: 0.9;}
+  100%{opacity: 0.1;}
+}
+@keyframes count {
+  0%{position: absolute;}
+  10%{position: absolute;}
+  20%{position: absolute;}
+
+}
+
+
+
+}
